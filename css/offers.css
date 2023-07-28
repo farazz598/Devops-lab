@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    /* background-color: #b0b5be; */
+}
+
+
+/* CSS Variables */
+
+:root {
+    --navbar-height: 60px;
+}
+
+
+/* Navigation bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 15%);
+}
+
+#navbar::before {
+    content: "";
+    /* background-color: orange; */
+    /* background-color: cadetblue; */
+    background-color: white;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+
+
+/* Navigation bar : logo and image */
+
+#logo {
+    margin: 23px 23px;
+    /* background-color: orange; */
+    /* background-color: cadetblue; */
+}
+
+#logo img {
+    height: 50px;
+    margin: 10px 0px;
+}
+
+
+/* Navigation bar : List styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    color: orange;
+    color: black;
+    /* color: cadetblue; */
+    text-decoration: none;
+    justify-content: center;
+    padding: 3px 20px;
+    border-radius: 20px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: bolder;
+    margin: 0px 10px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active {
+    /* color: rgb(255, 230, 206);
+    background-color: rgb(255, 136, 0); */
+    /* color: orange;
+    background-color: white; */
+    color: rgb(255, 136, 0);
+    /* color: rgb(72, 142, 145); */
+    /* color: rgb(62, 152, 155); */
+    background-color: white;
+    text-decoration: underline;
+}
+
+
+/* Main Section */
+
+.main {
+    margin: 0 auto;
+    line-height: 1.4;
+    max-width: 1180px;
+    min-height: 80vh;
+    padding-top: 40px;
+    padding-bottom: 8em;
+}
+
+.main h1 {
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.main p {
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+
+
+/* Contact Section  */
+
+.contact-conatainer {
+    background-color: black;
+}
+
+#contact {
+    display: flex;
+    /* position: relative; */
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 10px;
+    font-family: 'Bree Serif', serif;
+    justify-content: center;
+}
+
+#contact h4 {
+    margin: 20px 50px;
+    color: gray;
+}
+
+#contact ul {
+    margin: 10px 50px;
+    list-style: none;
+    padding: 10px 0px;
+}
+
+#contact ul li a {
+    text-decoration: none;
+}
+
+.company_ {
+    margin: 20px;
+    display: inline-block;
+    /* border:2px solid red; */
+    width: 20%;
+}
+
+.info_ {
+    margin: 20px;
+    display: inline-block;
+    /* border:2px solid red; */
+    width: 20%;
+}
+
+.legal_ {
+    margin: 20px;
+    display: inline-block;
+    /* border:2px solid red; */
+    width: 20%;
+}
+
+.down_ {
+    margin: 20px;
+    display: inline-block;
+    /* border:2px solid red; */
+    width: 20%;
+}
+
+.down_ img {
+    height: 200px;
+}
+
+
+/* Copyright section */
+
+.copyright {
+    display: flex;
+    background-color: black;
+}
+
+.copyright hr {
+    /* display: block; */
+    color: white;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+.copyright .logo {
+    /* display: flex; */
+    width: 163px;
+    height: 163px;
+    /* border:2px solid red; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.copyright .logo img {
+    display: block;
+    height: 50px;
+    margin: 50px 0px 5px 50px;
+}
+
+.copyright #legal {
+    margin: auto;
+}
+
+.social img {
+    width: 40px;
+    margin: 60px 10px 52px 10px;
+}
+
+
+/* Utility Class */
+
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.btn {
+    width: 150px;
+    display: inline-block;
+    background: rgb(255, 136, 0);
+    background: rgb(255, 115, 0);
+    /* border: 4px solid rgb(255, 136, 0); */
+    padding: 5px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+.btn1 span {
+    color: rgb(255, 115, 0);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    background: rgb(255, 115, 0);
+    /* line-height: em; */
+}
+
+.btn1 {
+    width: 150px;
+    height: 2rem;
+    display: inline-block;
+    /* background:rgb(255, 136, 0); */
+    background-color: transparent;
+    padding: 5px 20px;
+    color: black;
+    border: 2px solid rgb(255, 136, 0);
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+}
+
+.login {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #F7F7F7;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: grey 2px 2px 5px;
+}
+
+.signup {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #F7F7F7;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: grey 2px 2px 5px;
+}
+
+.login .closebtn {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    font-size: 36px;
+    margin-left: 40px;
+}
+
+.signup .closebtn {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    font-size: 36px;
+    margin-left: 40px;
+}
+
+.login h1 {
+    color: black;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+
+.signup h1 {
+    color: black;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+
+.login p {
+    color: black;
+    font-size: 12px;
+    color: #686b78;
+    margin-top: 6px;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.signup p {
+    color: black;
+    font-size: 12px;
+    color: #686b78;
+    margin-top: 6px;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.login input {
+    width: 360px;
+    height: 70px;
+    color: black;
+    line-height: normal;
+    font-size: 17px;
+    margin: 40px;
+    padding: 0 20px;
+    padding-top: 22px;
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    border: 1px solid grey;
+    /* outline: grey; */
+}
+
+.signup input {
+    width: 360px;
+    height: 70px;
+    color: black;
+    line-height: normal;
+    font-size: 17px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    padding: 0 20px;
+    padding-top: 22px;
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    border: 1px solid grey;
+    /* outline: grey; */
+}
+
+.login .phnum {
+    position: absolute;
+    left: 40px;
+    top: 186px;
+    padding-left: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    cursor: text;
+    transition: .2s ease;
+    width: 100%;
+    color: #93959f;
+    /* color: #111; */
+    will-change: transform, color, font-size;
+    pointer-events: none;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+.signup .phnum,
+.username,
+.uemail,
+.upass {
+    position: absolute;
+    left: 40px;
+    top: 185px;
+    padding-left: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    cursor: text;
+    transition: .2s ease;
+    width: 100%;
+    color: #93959f;
+    /* color: #111; */
+    will-change: transform, color, font-size;
+    pointer-events: none;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+.signup .username {
+    top: 260px;
+}
+
+.signup .uemail {
+    top: 335px;
+}
+
+.signup .upass {
+    top: 410px;
+}
+
+.login .btn1 {
+    width: 360px;
+    height: 50px;
+    display: inline-block;
+    background: rgb(255, 136, 0);
+    background: rgb(255, 115, 0);
+    /* border: 4px solid rgb(255, 136, 0); */
+    /* padding: 5px 20px; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    line-height: normal;
+    font-size: 17px;
+    margin: 0px 40px;
+    padding: 0 20px;
+    padding-top: 22px;
+    /* width: 100%; */
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0 2rem;
+    color: #fc8019;
+    letter-spacing: 0;
+    color: #fff;
+    background-color: #fc8019;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+    text-transform: uppercase;
+}
+
+.signup .btn1 {
+    width: 360px;
+    height: 50px;
+    display: inline-block;
+    background: rgb(255, 136, 0);
+    background: rgb(255, 115, 0);
+    /* border: 4px solid rgb(255, 136, 0); */
+    /* padding: 5px 20px; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    line-height: normal;
+    font-size: 17px;
+    margin: 0px 40px;
+    padding: 0 20px;
+    padding-top: 22px;
+    /* width: 100%; */
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0 2rem;
+    color: #fc8019;
+    letter-spacing: 0;
+    color: #fff;
+    background-color: #fc8019;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
+
+#scroll {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #ff8710;
+    /* background-color: rgb(72, 142, 145); */
+    text-indent: -9999px;
+    border-radius: 60px;
+}
+
+#scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #ffffff;
+}
+
+
+/* Dark Mode */
+
+body {
+    flex-direction: column;
+    transition: background 0.2s linear;
+}
+
+body.dark {
+    background: #585f72;
+    /* background-color: #4f4a41; */
+    /* background-color: #292c35; */
+}
+
+body.dark h1 {
+    color: rgb(247, 241, 231);
+    text-decoration: dotted underline;
+}
+
+body.dark h2 {
+    color: wheat;
+}
+
+body.dark #navbar::before {
+    background-color: rgb(255, 123, 0);
+}
+
+body.dark .label {
+    background-color: #111;
+    background-color: grey;
+}
+
+body.dark .timeline {
+    background-color: #474e5d;
+    /* background-color: #888580; */
+    border-color: #b8b1a2;
+}
+
+body.dark .timeline:after {
+    /* background-color: #b8b1a2; */
+    background-color: #292c35;
+}
+
+body.dark .container:after {
+    border-color: #292c35;
+}
+
+body.dark .content {
+    border-color: #292c35;
+}
+
+body.dark .content h2 {
+    color: #474e5d;
+}
+
+body.dark .content {
+    background-color: #B0B5BE;
+}
+
+body.dark .content p {
+    color: #646668;
+}
+
+body.dark .left::before {
+    border-color: transparent transparent transparent #292c35;
+    /* border-color:; */
+}
+
+body.dark .right::before {
+    /* border-color:; */
+    border-color: transparent #292c35 transparent transparent;
+}
+
+
+/* body.dark .services-container{
+    background-color: #140f0c;
+} 
+body.dark #services .box{
+    background-color: #351c0d;
+}
+body.dark .btn{
+    background: rgb(255, 123, 0)
+} */
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    background-color: rgb(255, 115, 0);
+    /* border: 1px solid orangered; */
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 24px;
+    width: 50px;
+    /* transform: scale(1.5); */
+    /* display: inline-block; */
+    position: absolute;
+    /* top: 45px; */
+    right: 320px;
+    /* flex-direction: row; */
+    margin-right: 10px;
+}
+
+.aside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: fixed;
+    /* height: 24px;
+    width: 50px; */
+    /* transform: scale(1.5); */
+    /* display: inline-block; */
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    /* flex-direction: row; */
+    margin-right: 10px;
+}
+
+.label .ball {
+    background-color: red;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    top: 2px;
+    left: 2px;
+    height: 25px;
+    width: 25px;
+    /* transform: scale(1.5); */
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(26px);
+}
+
+.label img {
+    margin: 0;
+    padding: 0;
+    /* margin-right: 0; */
+    /* padding-right: 7px; */
+}
+
+.label #moon {
+    margin-right: 0px;
+}
+
+body.dark #scroll {
+    background-color: rgb(255, 115, 0);
+}

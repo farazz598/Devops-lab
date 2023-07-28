@@ -1,0 +1,74 @@
+/* Navigation section */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 2rem;
+    /* padding: 0px 5px; */
+    margin: 20px 10px;
+}
+
+#logo{
+    margin: 5px 5px;
+}
+
+#logo img{
+    height: 100px;
+}
+
+/* Home section */
+#home::before img{
+    overflow: hidden;
+}
+
+/* Services section */
+#services{
+    flex-direction: column;
+}
+
+#services .box{
+    padding: 55px;
+}
+
+/* Download section */
+.download-conatainer{
+    overflow: hidden;
+}
+
+.left{
+    /* width:40%; */
+    position:relative;
+}
+
+.left img{
+    display: block;
+    align-items: center;
+    z-index: -100;
+}
+
+/* .left h2{
+    font-size:0.9rem;
+}
+.left p{
+    font-size:0.5rem;
+} */
+
+.right img{
+    position: relative;
+    top: 45px;
+    /* border:2px solid red; */
+    width:300px;
+    display: block;
+    right:0;
+    justify-content: center;
+    z-index: -2;
+}
+
+/* Contact section */
+
+
+/* Copyright section */
+
+
+/* Utility Class */
